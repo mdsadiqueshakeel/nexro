@@ -1,0 +1,60 @@
+@import './tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&family=Inder:wght@400&family=Manrope:wght@300;400;500&family=Sarpanch:wght@700&family=Sansita:wght@700&family=Scada:wght@400&display=swap');
+
+body {
+  font-family: 'Satoshi','Lucida Bright', 'Inder', 'Manrope', 'Sarpanch', 'Sansita', 'Scada', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Optional: Improve text rendering for animated elements */
+.text-animate {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite ease-in-out;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Smooth theme transitions */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
